@@ -2,6 +2,7 @@ export class Marciano
 {
     constructor(limiteVentanaH,limiteVentanaV,idsvg="contenedor",idc="marciano",ancho=50,alto=50,posX=0,posY=0,strokeWidth="black",stroke=1,fill="red")
     {
+
         this.contenedor = document.getElementById(idsvg);//Obtencion del objeto que contendra nuestro marciano.
         this.marciano = document.createElementNS("http://www.w3.org/2000/svg", "rect");//Creacion del objeto "rect" con SVG.
 
@@ -71,7 +72,9 @@ export class Marciano
             if(posX + this.ancho >= this.limiteVentanaH  )
             {
                 this.direccionH = false;
-                this.moverMarcianoAbajo(10)
+
+                this.moverMarcianoAbajo(25);
+
             }
             
         }else if(!this.direccionH){
@@ -79,7 +82,8 @@ export class Marciano
             if(posX <= 0 )
             {
                 this.direccionH = true;
-                this.moverMarcianoAbajo(10)
+
+                this.moverMarcianoAbajo(25);
             }
         }else{}
     }
