@@ -73,7 +73,7 @@ export class Marciano
             {
                 this.direccionH = false;
 
-                this.moverMarcianoAbajo(25);
+                this.moverMarcianoAbajo(50);
 
             }
             
@@ -83,7 +83,7 @@ export class Marciano
             {
                 this.direccionH = true;
 
-                this.moverMarcianoAbajo(25);
+                this.moverMarcianoAbajo(50);
             }
         }else{}
     }
