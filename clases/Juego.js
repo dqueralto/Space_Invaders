@@ -51,7 +51,7 @@ export class Juego
     moverBloque()//funcion que mueve el los objetos marciano
     {
         this.marciano.forEach(element => {
-            element.controlImpactoHorizontal(10);
+            element.controlImpactoHorizontal(3);
         });
     }
 
@@ -79,9 +79,6 @@ export class Juego
             if (!this.tocarFondo()) //mientras el marciano no toque el final del contenedor 
             {
                 this.moverBloque();
-
-
-
                 console.log(0);
             }else{
                 console.log(1);
