@@ -8,26 +8,15 @@ export class Juego
     {
         this.limiteVentanaH = contenedor.clientWidth;
         this.limiteVentanaV = contenedor.clientHeight;
-<<<<<<< HEAD
         this.nave = new Nave(this.limiteVentanaH / 2, this.limiteVentanaV - 40, 60, 30, "green");
-        this.marciano = new Marciano(this.limiteVentanaH,this.limiteVentanaV);
+        this.crearMarcianos();
+        console.log(this.marciano);
         this.disparos = new Array();
         this.colision = this.nave.controlColision();
         this.inicio();
     }
     
-=======
 
-
-        this.limiteVentanaH = contenedor.clientWidth;
-        this.limiteVentanaV = contenedor.clientHeight;
-        this.marciano = []; 
-        
-        this.crearMarcianos();
-        console.log(this.marciano);
-
-        this.inicio();
-    }
 
     crearMarcianos()//funcion que crea los marcianos
     {
@@ -78,7 +67,6 @@ export class Juego
     }
 
 
->>>>>>> 31e99581b3ce80a3ee121373aa8b99d884e7b807
     inicio()
     { 
         document.addEventListener("keydown", (evento) => {
@@ -105,14 +93,11 @@ export class Juego
             //if (!this.marciano[14].controlImpactoVertical() )//mientras el marciano no toque el final del contenedor 
             if (!this.tocarFondo()) //mientras el marciano no toque el final del contenedor 
             {
-<<<<<<< HEAD
-                this.marciano.controlImpactoHorizontal(5);//el marciano se mueve
-=======
+
                 this.moverBloque();
 
 
 
->>>>>>> 31e99581b3ce80a3ee121373aa8b99d884e7b807
                 console.log(0);
             }else{
                 console.log(1);
