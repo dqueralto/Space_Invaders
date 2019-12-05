@@ -9,6 +9,7 @@ export class Juego
         this.limiteVentanaH = contenedor.clientWidth;
         this.limiteVentanaV = contenedor.clientHeight;
         this.nave = new Nave(this.limiteVentanaH / 2, this.limiteVentanaV - 40, 60, 30, "green");
+        this.marciano = []; 
         this.crearMarcianos();
         console.log(this.marciano);
         this.disparos = new Array();
